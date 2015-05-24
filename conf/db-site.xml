@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property>
+		<name>export.db.type</name>
+		<value>Teradata</value>
+		<description>数据库类型</description>
+	</property>
+	<property>
+		<name>export.db.host</name>
+		<value>10.16.0.76</value>
+		<description>数据库主机地址</description>
+	</property>
+	<property>
+		<name>export.db.port</name>
+		<value>1025</value>
+		<description>数据库的服务端口</description>
+	</property>
+	<property>
+		<name>export.db.user</name>
+		<value>etl_prd_ups</value>
+		<description>连接数据库的用户</description>
+	</property>
+	<property>
+		<name>export.db.pass</name>
+		<value>etl_prd_ups123</value>
+		<description>连接数据库的用户密码</description>
+	</property>
+	<property>
+		<name>export.db.server</name>
+		<value></value>
+		<description>数据库的服务名称</description>
+	</property>
+	<property>
+		<name>export.db.charset</name>
+		<value>UTF-8</value>
+		<description>数据库的字符编码</description>
+	</property>
+</configuration>

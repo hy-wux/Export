@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property>
+		<name>export.ftp.type</name>
+		<value>SFTP</value>
+		<description>FTP类型，可选：FTP、SFTP</description>
+	</property>
+	<property>
+		<name>export.ftp.host</name>
+		<value>10.16.0.245</value>
+		<description>FTP服务器地址</description>
+	</property>
+	<property>
+		<name>export.ftp.port</name>
+		<value>22</value>
+		<description>FTP服务器端口，默认情况：FTP(21)、SFTP(22)</description>
+	</property>
+	<property>
+		<name>export.ftp.user</name>
+		<value>etl_prd_ups</value>
+		<description>FTP用户名</description>
+	</property>
+	<property>
+		<name>export.ftp.pass</name>
+		<value>etl_prd_ups</value>
+		<description>FTP密码</description>
+	</property>
+	<property>
+		<name>export.ftp.timeout</name>
+		<value>60</value>
+		<description>FTP连接超时时间，以秒(s)为单位</description>
+	</property>
+	<property>
+		<name>export.ftp.path</name>
+		<value>tmp</value>
+		<description>FTP远程路径</description>
+	</property>
+	<property>
+		<name>export.ftp.mode</name>
+		<value>Passive</value>
+		<description>FTP传输方式，可选：Passive、Port</description>
+	</property>
+</configuration>

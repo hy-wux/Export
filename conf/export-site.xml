@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 请复制以下单元到配置文件中做修改。
+
+    <property>
+		<intecode>接口编号</intecode>
+		<srctable>源系统表名称</srctable>
+		<incrflag>增全量标志(c|q|z)</incrflag>
+		<expflg>是否导出数据(true|false)</expflg>
+		<expsql>导出数据的SQL语句</expsql>
+		<chkflg>是否生成校验数据(true|false)</chkflg>
+		<chksql>校验数据的SQL语句</chksql>
+		<description>
+			接口编号：系统简码+4位数字，不能重复
+			增全量标志：初始化c、全量q、增量z
+			是否导出数据：是true、否false
+			是否生成校验数据：是true、否false
+		</description>
+	</property>
+
+-->
+<!--
+	<property>
+		<intecode></intecode>
+		<srctable></srctable>
+		<incrflag></incrflag>
+		<expflg></expflg>
+		<expsql></expsql>
+		<chkflg></chkflg>
+		<chksql></chksql>
+		<description></description>
+	</property>
+-->
+
+<configuration>
+	<property>
+		<intecode>ETL0001</intecode>
+		<srctable>ETL_JOB</srctable>
+		<incrflag>q</incrflag>
+		<expflg>true</expflg>
+		<expsql>SELECT * FROM ETL_DATA_PRD_UPS.ETL_JOB</expsql>
+		<chkflg>true</chkflg>
+		<chksql>SELECT 'ETL_DATA_PRD_UPS','ETL_JOB',COUNT(*) FROM ETL_DATA_PRD_UPS.ETL_JOB</chksql>
+		<description>任务配置表的数据</description>
+	</property>
+	<property>
+		<intecode>ETL0002</intecode>
+		<srctable>ETL_JOB_STEP</srctable>
+		<incrflag>q</incrflag>
+		<expflg>true</expflg>
+		<expsql>SELECT * FROM ETL_DATA_PRD_UPS.ETL_JOB_STEP WHERE STEP_NO &lt; 2</expsql>
+		<chkflg>true</chkflg>
+		<chksql>SELECT 'ETL_DATA_PRD_UPS','ETL_JOB_STEP',COUNT(*) FROM ETL_DATA_PRD_UPS.ETL_JOB_STEP WHERE STEP_NO &lt; 2</chksql>
+		<description>任务步骤配置表的数据</description>
+	</property>
+	<property>
+		<intecode>ETL0003</intecode>
+		<srctable>ETL_JOB_STEP</srctable>
+		<incrflag>q</incrflag>
+		<expflg>true</expflg>
+		<expsql>SELECT * FROM ETL_DATA_PRD_UPS.ETL_JOB_STEP WHERE STEP_NO >= 2</expsql>
+		<chkflg>true</chkflg>
+		<chksql>SELECT 'ETL_DATA_PRD_UPS','ETL_JOB_STEP',COUNT(*) FROM ETL_DATA_PRD_UPS.ETL_JOB_STEP WHERE STEP_NO >= 2</chksql>
+		<description>任务步骤配置表的数据</description>
+	</property>
+</configuration>

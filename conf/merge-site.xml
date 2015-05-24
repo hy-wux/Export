@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 请复制以下单元到配置文件中做修改。
+
+	<property>
+		<intecode>接口编号</intecode>
+		<subscode>子接口编号(使用逗号分隔的多个接口编号)</subscode>
+		<description>描述信息</description>
+	</property>
+
+-->
+
+<!--
+	<property>
+		<intecode></intecode>
+		<subscode></subscode>
+		<description></description>
+	</property>
+-->
+<configuration>
+	<property>
+		<intecode>ETL0004</intecode>
+		<subscode>ETL0002,ETL0003</subscode>
+		<description>
+			数据量太大，使用一个线程卸载需要很长时间。
+			拆分成多个线程卸载，然后合并子线程的文件得到最终的文件。
+		</description>
+	</property>
+</configuration>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Do not modify this file directly. Instead, copy entries that you wish 
+	to modify from this file into core-site.xml and change them there. If core-site.xml 
+	does not already exist, create it. -->
+
+<configuration>
+	<property>
+		<name>export.core.procDir</name>
+		<value>proc/YYYY-MM-DD</value>
+		<description>监控文件路径</description>
+	</property>
+	<property>
+		<name>export.core.logsDir</name>
+		<value>logs/YYYY-MM-DD</value>
+		<description>日志文件路径</description>
+	</property>
+	<property>
+		<name>export.core.dataDir</name>
+		<value>data/YYYY-MM-DD</value>
+		<description>数据文件路径</description>
+	</property>
+	<property>
+		<name>export.core.sqlsDir</name>
+		<value>sqls/YYYY-MM-DD</value>
+		<description>查询文件路径</description>
+	</property>
+	<property>
+		<name>export.core.ZipData</name>
+		<value>5</value>
+		<description>压缩多少天前的数据</description>
+	</property>
+	<property>
+		<name>export.core.DelData</name>
+		<value>15</value>
+		<description>删除多少天前的数据</description>
+	</property>
+	<property>
+		<name>export.core.ZipLogs</name>
+		<value>5</value>
+		<description>压缩多少天前的日志</description>
+	</property>
+	<property>
+		<name>export.core.DelLogs</name>
+		<value>15</value>
+		<description>删除多少天前的日志</description>
+	</property>
+	<property>
+		<name>export.core.SystemCode</name>
+		<value>EXP</value>
+		<description>源系统编码</description>
+	</property>
+	<property>
+		<name>export.core.QualityCode</name>
+		<value>EXPDQ02</value>
+		<description>数据校验代码</description>
+	</property>
+	<property>
+		<name>export.core.FetchSize</name>
+		<value>2000</value>
+		<description>查询记录缓冲大小</description>
+	</property>
+	<property>
+		<name>export.core.TimeUnit</name>
+		<value>SECOND</value>
+		<description>时间单位</description>
+	</property>
+	<property>
+		<name>export.core.CharSet</name>
+		<value>UFT-8</value>
+		<description>导出数据的文件编码</description>
+	</property>
+	<property>
+		<name>export.core.ThreadExport</name>
+		<value>10</value>
+		<description>同时进行导出的最大线程数量</description>
+	</property>
+	<property>
+		<name>export.core.ThreadSleep</name>
+		<value>5</value>
+		<description>进程睡眠时间，以秒(s)为单位</description>
+	</property>
+</configuration>

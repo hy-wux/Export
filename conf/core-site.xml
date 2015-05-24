@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property>
+		<name>export.core.SystemCode</name>
+		<value>ETL</value>
+		<description>源系统编码</description>
+	</property>
+	<property>
+		<name>export.core.QualityCode</name>
+		<value>ETLDQ02</value>
+		<description>数据校验代码</description>
+	</property>
+</configuration>
