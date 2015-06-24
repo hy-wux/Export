@@ -427,7 +427,6 @@ public class ExpShell extends Configured implements Tool {
 	}
 
 	public static void main(String[] args) {
-		args = new String[] { "2015/05/01" };
 		ExpShell shell = new ExpShell();
 		shell.setConf(new Configuration());
 		int res = 0;
